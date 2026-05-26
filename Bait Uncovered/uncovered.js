@@ -95,3 +95,29 @@ document.querySelectorAll('.example-btn').forEach(btn => {
     }
   });
 });
+
+// --- Reset Button Logic ---
+const resetBtn = document.getElementById('reset-btn');
+
+resetBtn.addEventListener('click', () => {
+  // 1. Uncheck all checkboxes in the UI
+  box1.checked = false;
+  box2.checked = false;
+  box3.checked = false;
+  box4.checked = false;
+  box5.checked = false;
+  box6.checked = false;
+
+  // 2. Clear the saved state from Chrome extension storage
+  chrome.storage.local.set({ 
+    b1: false, 
+    b2: false, 
+    b3: false, 
+    b4: false, 
+    b5: false, 
+    b6: false 
+  });
+
+  // 3. Clear the text displayed in the score element
+  scoreDisplay.innerText = "";
+});
