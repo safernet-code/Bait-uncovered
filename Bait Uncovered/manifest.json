@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Extention2",
+    "version": "1.0.0",
+    "permissions": [
+        "storage"
+    ],
+    "description": "Misinformation app",
+    "icons": {
+        "16": "news.png"
+    },
+    "action": {
+        "default_icon": "news.png",
+        "default_popup": "uncovered.html"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["clue.mp3"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
+

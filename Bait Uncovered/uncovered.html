@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="uncovered.css">
+    <title>Bait Uncovered</title>
+</head>
+<body>
+
+  <div class="popup-card">
+    <h1>Bait Uncovered</h1>
+
+    <div class="checkboxes">
+    <!-- Question 1 -->
+       <div class="question-container">
+         <input type="checkbox" id="Q1">
+                <label for="Q1"><strong>HUGE promise</strong> that is never really explained or proven?
+                <span class="example-btn" data-target="ex1">(example)</span>
+            </label>
+            <div id="ex1" class="example-text">
+            <em>"This green helps lose 10lbs of fat weekly!"</em> (the article only talks about drinking green tea without proving the claim.)
+            </div>
+       </div>
+    
+       <!-- Question 2 -->
+       <div class="question-container">
+         <input type="checkbox" id="Q2">
+            <label for="Q2"><strong>Extreme words</strong> (<u>ALWAYS</u>, <u>NEVER</u>, <u>PROOF</u>) to describe a topic?
+                <span class="example-btn" data-target="ex2">(example)</span>
+            </label>
+            <div id="ex2" class="example-text"><em>Headlines like "SCIENTISTS PROVE COFFEE CURES EVERY ILLNESS"</em> (instead of explaining a nuanced trial.)</div>
+       </div>
+       
+       <!-- Question 3 -->
+       <div class="question-container">
+            <input type="checkbox" id="Q3"><label for="Q3">Evidence <strong>without a specific verifiable </strong> person, organization, company, or institution?
+                <span class="example-btn" data-target="ex3">(example)</span>
+            </label>
+            <div id="ex3" class="example-text"><em>Phrases like "<u>experts say</u>" "<u>officials claim</u>" or "<u>many doctors reveal</u>"</em> without naming them.</div>
+       </div>
+       
+       <!-- Question 4 -->
+       <div class="question-container">
+            <input type="checkbox" id="Q4"><label for="Q4"><strong>Only tells one side</strong> of an argument/story?
+                <span class="example-btn" data-target="ex4">(example)</span>
+            </label>
+            <div id="ex4" class="example-text"><em>Ex:</em> An article covering a political debate that only lists quotes from one candidate.</div>
+       </div>
+
+       <!-- Question 5 -->
+       <div class="question-container">
+        <input type="checkbox" id="Q5">
+        <label for="Q5">The picture does not match the event? (<i>tip: reverse-image Google search</i>)
+            <span class="example-btn" data-target="ex5">(example)</span>
+        </label>
+        <div id="ex5" class="example-text"><em>Ex:</em> Using an image from a 2018 music festival to claim it represents a breaking news riot happening today.</div>
+       </div>
+       <!-- Question 6 -->
+       <div class="question-container">
+        <input type="checkbox" id="Q6">
+        <label for="Q6"><strong>AI-generated image</strong> or a meme?
+            <span class="example-btn" data-target="ex6">(example)</span>
+        </label>
+        <div id="ex6" class="example-text"><em>The image has weirdly shaped extra fingers, warped text in the background, or an overly glossy cartoon sheen.</em> </div>
+       </div>
+    </div>
+
+    <!-- Calculate button -->
+    <div>
+        <button id="submit-btn">Calculate Score</button>
+        <p id="score-display"></p>
+    </div>
+  </div>
+
+  <!-- RESET button
+    <div>
+        <button id="reset-btn">RESET</button>
+        <p id="score-resets"></p>
+    </div>
+  </div> -->
+
+<script src="uncovered.js"></script>
+</body>
+</html>
